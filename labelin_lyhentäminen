@@ -1,0 +1,6 @@
+# Funktion kutsuminen
+lyhenna_label(!USERLABEL!)
+
+# Funktion määrittäminen
+def lyhenna_label(haettava):
+    return haettava[4:]
