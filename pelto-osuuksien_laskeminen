@@ -1,0 +1,9 @@
+hae_koodi(!peltojen_osuus_ruudusta!)
+
+def hae_koodi(osuus):
+    if osuus > 70:
+        return -2
+    elif osuus <= 70 and osuus > 30:
+        return -1
+    else:
+        return 0
