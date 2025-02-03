@@ -1,0 +1,19 @@
+# Lasketaan field calculatorilla eri sarakkeista uusi synteesisarake
+
+# Kutsu
+hae_koodi(!Yli_3ha_tih_taajama_metsien_osuus_ruudusta_pisteet!,!Yli40ha_metsän_osuus_ruudust_!,!Yli_3ha_metsäalueet_pisteet!)
+
+# Koodi
+def hae_koodi(ha_3_tih,ha_40,ha_3):
+    # Palautetaan kaikki, jotka saa 3ha-tih-datasta -3 pistettä
+    if ha_3_tih==-3:
+        return -3
+    # Palautetaan kaikki, jotka saa 40ha-datasta -2 pistettä
+    elif ha_40==-2:
+        return -2
+    # Palautetaan kaikki, jotka saa 3ha-datasta -1 pistettä
+    elif ha_3==-1:
+        return -1
+    # Muut saa arvon 0
+    else:
+        return 0 
